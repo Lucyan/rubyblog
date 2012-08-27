@@ -3,5 +3,5 @@ class Post < ActiveRecord::Base
   
   validates :title, :content, :presence => true
   validates :title, :length => { :minimum => 2 }
-  validates :title, :uniqueness => { :message => "El título ya está en uso" }
+  validates :title, :uniqueness => { :message => "El titulo ya se uso" }
 end
